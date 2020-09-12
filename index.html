@@ -1,20 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        a:link {
+            color:rgb(253, 78, 78);
+            text-decoration: none;
+        }
+        a:visited {
+            color:rgb(253, 78, 78);
+            text-decoration: none;
+        }
+        a:hover {
+            padding-left: 5;
+        }
+        .topbar {
+            text-align: left;
+            margin-top: 25px;
+            margin-left: 220px;
+        }
+        .text {
+            text-align:left;
+            line-height: 15px;
+            margin-top:  50px;
+            margin-left:200px;
+        }
+        .aboutme {
+            text-align:left;
+            line-height: 15px;
+            margin-top: 50px;
+        }
+        .projectradio {
+            text-align:left;
+            line-height: 15px;
+            margin-top: 50px;
+        }
+    </style>
+
     <head>
         <meta charset="UTF-8">
-        <title>Example Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Main Website</title>
     </head>
     <body>
-        <h1 style="text-align:center; color:red;">Title</h1>
-        <b>This <br> is <br> some <br> text. <br></b>
-        <p>clic image is yutub<br>
-        <a href="https://www.youtube.com">
-        <img src="testimg.png" alt="testimg" height="128" width="128">
-        </a>
-        </p>
-        <p>click link
-        <a href="https://www.youtube.com">YuTub</a>
-        is yutub</p>
-        <h2>Title h2</h2>
+        <div class="topbar">
+            <b>
+                <a style="text-align:left; color:rgb(68, 68, 68);" href="index.html">
+                    <font size="6" face="arial">
+                        Home
+                    </font>
+                </a>
+            </b>
+            <br>
+        </div>
+
+        <div class="text">
+            <div class="aboutme">
+                <b style="text-align: left;   color:rgb(56, 56, 56);"> 
+                    <font size="6" face="arial">
+                        About Me
+                    </font>
+                </b>
+
+                <p style="text-align:left;">
+                    <img style="float:left; padding-right: 10px; "; src="logo.png">
+                    <p>
+                        <font size="3" face="arial">
+
+                            I am a 13 year old aspring game developer. I have dabbled in many languages <br> 
+                            and sticking with one for more than a week is considered by me as a miracle. <br>
+                            Currently im develping my game <a href="https://github.com/WillMexe/Project-Radio">Project Radio</a> in Python using the PyGame library. <br>
+
+                            <br><br><br><br><br>
+                        </font>
+                    </p>
+                </p>
+            </div>
+
+            <div class="projectradio">
+                <b>
+                    <a style="text-align:left; color:rgb(56, 56, 56);" href="https://github.com/WillMexe/Project-Radio">
+                        <font size="6" face="arial">
+                            Project Radio
+                        </font>
+                    </a>
+            </b>
+
+                <ul>
+                    <li>             
+                        <font size="3" face="arial">
+                            <a style="color:rgb(253, 78, 78); line-height: 1;" href="Project-Radio/Beta 1.5.html"> 
+                                Enemy Updates 
+                            </p> 
+                            <p style="color:rgb(56, 56, 56);"> 
+                                30/7 - 2020 
+                            </p>
+                    </li>
+                    <li>
+                            <a style="color:rgb(253, 78, 78); line-height: 1;" href="Project-Radio/Beta 1.4.1.html"> 
+                                Bug Fixes
+                            </p> 
+                            <p style="color:rgb(56, 56, 56);"> 
+                                29/7 - 2020
+                            </p>
+                    </li>
+                    <li>
+                            <a style="color:rgb(253, 78, 78); line-height: 1;" href="Project-Radio/Beta 1.4.html"> 
+                                Full on Rework
+                            </p> 
+                            <p style="color:rgb(56, 56, 56);"> 
+                                29/7 - 2020 
+                            </p>
+                        </font> 
+                    </li>
+                </ul>
+                    <a style="text-align:left; color:rgb(253, 78, 78);" href="Project-Radio/all.html">
+                        <font size="3" face="arial">
+                            More...
+                        </font>
+                    </a>
+                </font>
+            </div>
+        </div>
     </body>
 </html>
