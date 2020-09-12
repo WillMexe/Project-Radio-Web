@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        a:link {
+            color:rgb(253, 78, 78);
+            text-decoration: none;
+        }
+        a:visited {
+            color:rgb(253, 78, 78);
+            text-decoration: none;
+        }
+        .topbar {
+            text-align: left;
+            margin-top: 25px;
+            margin-left: 220px;
+        }
+        .title {
+            text-align:left;
+            line-height: 15px;
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .text {
+            text-align:left;
+            line-height: 15px;
+            margin-top:  20px;
+            margin-left:200px;
+        }
+        li {
+            max-width: 600px;
+        }
+        ul {
+            list-style-position: outside;
+            margin-left: -20px;
+        }
+        
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Radio Devlog</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <b>
+                <a style="text-align:left; color:rgb(68, 68, 68);" href="../index.html">
+                    <font size="6" face="arial">
+                        Home
+                    </font>
+                </a>
+            </b>
+        </div>
+        <div class="title">
+            <b style="text-align: left; color:rgb(56, 56, 56);"> 
+                <font size="6" face="arial">
+                    Beta 1.4
+                </font>
+            </b>
+        </div>
+        <div class="text">
+            
+                <font size="4" face="arial">
+                    <p style="text-align:left; color:rgb(56, 56, 56);"></p>
+                            <i>Full on Rework</i>
+                    </p>
+                </font>
+
+                <font size="3" face="arial">
+                    <p style="text-align:left; color:rgb(253, 78, 78); text-indent: 30px;">
+                            <p style="text-align:left; color:rgb(253, 78, 78);"> [General] </p>
+                        <ul>
+                            <li>
+                                Restructured the code (again) <br>
+                            </li>
+                            <li>
+                                Separated different uses for different stuff to help with loadtime and this will not make the
+                                game look like Yandere Simulator for all the if else statements
+                            </li>
+                            <li>
+                                Added an arrested counter. The arrested counter will go up if you touch a military and with this
+                                the game will slow down to 80% to give it more feedback. Your screen will also get a red 
+                                outline to also give more feedback. This was added since you are breaking into a military facility afterall. 
+                            </li>
+                            <li>
+                                Fixed scrolling fast going over max items
+                            </li>
+                            <br>
+                        </ul>
+                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Weapons] </p>
+                        <ul>
+                            <li>
+                                Redid all the weapon logic and scripts because i planned to do Melee and Guns in the same script
+                                this wouldve looked dodo and it wasnt sustainable. The melee animations were also done in the "WeaponsNormal" script
+                                this in another reason it is better to do it in different scripts because now i doesnt have to check everything for
+                                the gun logic now it just haves to do the animation. 
+                            </li>
+                            <li>
+                                Ini files are gone crab dance intensifies. Ok what i really mean by this is that the weapons stats system is not gonna
+                                be present in this download. I've replaced them with arrays instead but json/ini files are still planned but with the game
+                                expanding and needing new variables for the weapons all the time it isnt great. When the weapons feel good and finalized
+                                i'll add it back.
+                            </li>
+                            <li>
+                                Added the katana as suggested by CWEDI like 6 months ago
+                            </li>
+                        </ul>
+                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Player] </p>
+                        <ul>
+                            <li>
+                                Removed jumping; the jumping mechanic wasnt really used and i had no idea of how to use it in the game. 
+                                The only thing it served was confusion that when you jumped twice as high as the walls you couldnt go over them.
+                            </li>
+                            <li>
+                                Added dash. The dash replaces the jump as a avoid strategy. It glides you over in your walking direction and is
+                                from testing and my experience more fun to use.
+                            </li>
+                            <li>
+                                Removed getting op weapons in the beginning. In the earlier builds of the game you start off with way to overpowered gear and that is cool and all 
+                                but it didnt really in my opinion work right. I've given the better guns to enemies that you have to kill (this is all wip) and given you 
+                                a pistol and a knife to start with. But weapons will be dropped so if you still want to blast your way through a level with an rpg you
+                                will need to obtain it first.
+                            </li>
+                        </ul>
+                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Map] </p>
+                        <ul>
+                            <li>
+                                The map size has been reduced drastically. From the originally planned large maps i've dragged down the size to about two/three screens.
+                                This in conjunction with every room now being able to feel more alive because it takes less time to decorate it also makes the enemy ai 
+                                much less of a pain to code and now i dont need to implement those tile collisions i talked about in devlog 2.
+                            </li>
+                            <li>
+                                Added Grass
+                            </li>
+                            <li>
+                                Implemented alert levels. Alert levels are levels of alertness. No just kidding, alert levels are to give the player a choice if they want to run 
+                                and gun through the entire room with a assault rifle or more carefully go through the level. The alert level goes up if you persay shoot a weapon.
+                                it starts at "Low" alert level then if you shoot a pistol it goes up to "Medium" and a rifle it goes up to "High". This i hope will add some strategy
+                                so if you have just started out you can be careful and then later in the game you can just blast your way through. Enemy "level" will also increase with
+                                the alertness of a room. (this is turned of in the demo below as it is still very buggy)
+                            </li>
+                        </ul>
+                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Enemy] </p>
+                        <ul>
+                            <li>
+                                Enemy ai is greatly improved now having pathfinding instead of just a collision line that the enemy moved along if it didnt collide with an obstacle.
+                            </li>
+                            <li>
+                                Changed sprite from zombie to military as it was intended just hadnt gotten around to it.
+                            </li>
+                            <li>
+                                Enemy weapon implementation is in the works but it just gives me bugs.
+                            </li>
+                        </ul>
+                    </p>
+                </font> 
+        </div>
+    </body>
+</html>
