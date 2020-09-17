@@ -1,138 +1,86 @@
-<!DOCTYPE html>
 <html lang="en">
-    <style>
-        a:link {
-            color:rgb(253, 78, 78);
-            text-decoration: none;
-        }
-        a:visited {
-            color:rgb(253, 78, 78);
-            text-decoration: none;
-        }
-        a:hover {
-            padding-left: 5;
-            margin-left: 10px;
-        }
-        .topbar {
-            text-align: left;
-            margin-top: 25px;
-            margin-left: 220px;
-        }
-        .title {
-            text-align:left;
-            line-height: 15px;
-            margin-top: 50px;
-            margin-left: 200px;
-        }
-        .text {
-            text-align:left;
-            line-height: 15px;
-            margin-top:  20px;
-            margin-left:200px;
-        }
-        li {
-            max-width: 600px;
-        }
-        ul {
-            list-style-position: outside;
-            margin-left: -20px;
-        }
-        
-    </style>
-
+    <link rel="stylesheet" href="../styles.css">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Project Radio Devlog</title>
     </head>
     <body>
-        <div class="topbar">
-            <b>
-                <a style="text-align:left; color:rgb(68, 68, 68);" href="../index.html">
-                    <font size="6" face="arial">
-                        Home
-                    </font>
+        <div class="main">
+            <div class="header">
+                <a style="color:rgb(68, 68, 68);" href="../index.html">
+                    Home
                 </a>
-            </b>
-        </div>
-        <div class="title">
-            <b style="text-align: left; color:rgb(56, 56, 56);"> 
-                <font size="6" face="arial">
-                    Beta 1.2
-                </font>
-            </b>
-        </div>
-        <div class="text">
-            <font size="4" face="arial">
-                <p style="text-align:left; color:rgb(56, 56, 56);"></p>
-                        <i>Tidied up the code</i>
-                </p>
-            </font>
+            </div>
+            <div class="subheader">
+                Beta 1.2
+            </div>
+            <div class="text">
+                <i>Tidied up the code</i>
+            </div>
+            <div style="color:rgb(253, 78, 78);"class="subheader">
+                [General]
+            </div>
+            <div class="listobject">
+                Revamped the whole old base engine i made like 3 months ago
+            </div>
+            <div class="listobject">
+                Started utalizing state maching more
+            </div>
 
-                <font size="3" face="arial">
-                    <p style="text-align:left; color:rgb(253, 78, 78); text-indent: 30px;">
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [General] </p>
-                        <ul>
-                            <li>
-                                Revamped the whole old base engine i made like 3 months ago
-                            </li>
-                            <li>
-                                Started utalizing state maching more
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Player] </p>
-                        <ul>
-                            <li>
-                                Added springting making you go 2x walking speed
-                            </li>
-                            <li>
-                                Added jumping
-                            </li>
-                            <li>
-                                Added shadow to more accuratley show when jumping
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Enemy] </p>
-                        <ul>
-                            <li>
-                                Removed enemy temporarly due to Ai bugs will be back by 1.3
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Weapons] </p>
-                        <ul>
-                            <li>
-                                Added 3x spread while running and jumping
-                            </li>
-                            <li> 
-                                Buffed RPG damage
-                            </li>
-                            <li>
-                                Buffed SMG firerate
-                            </li>
-                            <li>
-                                Added more SMG spread
-                            </li>
-                            <li>
-                                Made ammo come from the end of the gun instead of the handle
-                            </li>
-                            <li>
-                                Made RPG reload faster by 0.5 seconds
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [GUI] </p>
-                        <ul>
-                            <li>
-                                Revamped weapon info to look better removing some blur
-                            </li>
-                            <li>
-                                Fixed mouse not moving with the frame
-                            </li>
-                        </ul>
-                    </p>
-                    <br>
-                    <br>
-                    <iframe width="500" height="280" src="https://www.youtube.com/embed/ApP4WfLS9hw" frameborder="0" allowfullscreen></iframe>
-                </font> 
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Player]
+            </div>
+            <div class="listobject">
+                Added springting making you go 2x walking speed
+            </div>
+            <div class="listobject">
+                Added jumping
+            </div>
+            <div class="listobject">
+                Added shadow to more accuratley show when jumping
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Enemy]
+            </div>
+            <div class="listobject">
+                Removed enemy temporarly due to Ai bugs will be back by 1.3
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Weapons]
+            </div>
+            <div class="listobject">
+                Added 3x spread while running and jumping
+            </div>
+            <div class="listobject">
+                Buffed RPG damage
+            </div>
+            <div class="listobject">
+                Buffed SMG firerate
+            </div>
+            <div class="listobject">
+                Added more SMG spread
+            </div>
+            <div class="listobject">
+                Made ammo come from the end of the gun instead of the handle
+            </div>
+            <div class="listobject">
+                Made RPG reload faster by 0.5 seconds
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [GUI]
+            </div>
+            <div class="listobject">
+                Revamped weapon info to look better removing some blur
+            </div>
+            <div class="listobject">
+                Fixed mouse not moving with the frame
+            </div>
+            <br>
+            <iframe width="500" height="280" src="https://www.youtube.com/embed/ApP4WfLS9hw" frameborder="0" allowfullscreen></iframe>
         </div>
     </body>
 </html>

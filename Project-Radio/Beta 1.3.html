@@ -1,144 +1,95 @@
-<!DOCTYPE html>
 <html lang="en">
-    <style>
-        a:link {
-            color:rgb(253, 78, 78);
-            text-decoration: none;
-        }
-        a:visited {
-            color:rgb(253, 78, 78);
-            text-decoration: none;
-        }
-        a:hover {
-            padding-left: 5;
-            margin-left: 10px;
-        }
-        .topbar {
-            text-align: left;
-            margin-top: 25px;
-            margin-left: 220px;
-        }
-        .title {
-            text-align:left;
-            line-height: 15px;
-            margin-top: 50px;
-            margin-left: 200px;
-        }
-        .text {
-            text-align:left;
-            line-height: 15px;
-            margin-top:  20px;
-            margin-left:200px;
-        }
-        li {
-            max-width: 600px;
-        }
-        ul {
-            list-style-position: outside;
-            margin-left: -20px;
-        }
-        
-    </style>
-
     <head>
+        <link rel="stylesheet" href="../styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Project Radio Devlog</title>
     </head>
     <body>
-        <div class="topbar">
-            <b>
+        <div class="main">
+            <div class="header">
                 <a style="text-align:left; color:rgb(68, 68, 68);" href="../index.html">
-                    <font size="6" face="arial">
-                        Home
-                    </font>
+                    Home
                 </a>
-            </b>
-        </div>
-        <div class="title">
-            <b style="text-align: left; color:rgb(56, 56, 56);"> 
-                <font size="6" face="arial">
-                    Beta 1.3
-                </font>
-            </b>
-        </div>
-        <div class="text">
-                <font size="3" face="arial">
-                    <p style="text-align:left; color:rgb(253, 78, 78); text-indent: 30px;">
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [General] </p>
-                        <ul>
-                            <li>
-                                Made game widescreen due to recommendations
-                            </li>
-                            <li>
-                                Fixed mouse script to make the ingame mouse more reliable
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Enemy] </p>
-                        <ul>
-                            <li>
-                                Adding back enemy postponed
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Weapons] </p>
-                        <ul>
-                            <li>
-                                Added new weapon names to guns
-                            </li>
-                            <li>
-                                Added new weapon names to guns
-                                <li>
-                                    Silenced Pistol -> 1911-s
-                                </li>
-                                <li>
-                                    SMG -> MP9
-                                </li>
-                            </li>
-                            <li>
-                                Added new sniper that adds 1.5x visibility
-                            </li>
-                            <li>
-                                Added back showing max ammo besides current ammo in gui
-                            </li>
-                            <li>
-                                Added 20% more spread to the MP9
-                            </li>
-                            <li>
-                                Made reload go to the end of the gui and not past it
-                            </li>
-                            <li>
-                                Adjusted weapon volumes to 70%
-                            </li>
-                            <li>
-                                Added back weapon switching
-                            </li>
-                        </ul>
-                            <p style="text-align:left; color:rgb(253, 78, 78);"> [Player] </p>
-                        <ul>
-                            <li>
-                                Fixed jump sound not playing while shooting
-                            </li>
-                            <li> 
-                                Fixed shadow not being seethrough
-                            </li>
-                            <li>
-                                Added back player bobbing backwards when gun is shot
-                            </li>
-                            <li>
-                                Fixed walking animations playing at all times
-                            </li>
-                            <li>
-                                Updated walking animations to fix it only moving one leg
-                            </li>
-                            <li>
-                                Made running slower
-                            </li>
-                        </ul>
-                    </p>
-                    <br>
-                    <br>
-                    <iframe width="500" height="280" src="https://www.youtube.com/embed/F1LuU7q_yyA" frameborder="0" allowfullscreen></iframe>
-                </font> 
+            </div>
+            <div class="subheader">
+                Beta 1.3
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [General]
+            </div>
+            <div class="listobject">
+                Made game widescreen due to recommendations
+            </div>
+            <div class="listobject">
+                Fixed mouse script to make the ingame mouse more reliable
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Enemy]
+            </div>
+            <div class="listobject">
+                Adding back enemy postponed
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Weapons]
+            </div>
+            <div class="listobject">
+                Added new weapon names to guns
+            </div>
+            <div class="listobject">
+                Added new weapon names to guns
+                <div class="listobject">
+                    Silenced Pistol -> 1911-s
+                </div>
+                <div class="listobject">
+                    SMG -> MP9
+                </div>
+            </div>
+            <div class="listobject">
+                Added new sniper that adds 1.5x visibility
+            </div>
+            <div class="listobject">
+                Added back showing max ammo besides current ammo in gui
+            </div>
+            <div class="listobject">
+                Added 20% more spread to the MP9
+            </div>
+            <div class="listobject">
+                Made reload go to the end of the gui and not past it
+            </div>
+            <div class="listobject">
+                Adjusted weapon volumes to 70%
+            </div>
+            <div class="listobject">
+                Added back weapon switching
+            </div>
+
+            <div style="color:rgb(253, 78, 78);" class="subheader">
+                [Player]
+            </div>
+            <div class="listobject">
+                Fixed jump sound not playing while shooting
+            </div>
+            <div class="listobject">
+                Fixed shadow not being seethrough
+            </div>
+            <div class="listobject">
+                Added back player bobbing backwards when gun is shot
+            </div>
+            <div class="listobject">
+                Fixed walking animations playing at all times
+            </div>
+            <div class="listobject">
+                Updated walking animations to fix it only moving one leg
+            </div>
+            <div class="listobject">
+                Made running slower
+            </div>
+            <br>
+            <iframe width="500" height="280" src="https://www.youtube.com/embed/F1LuU7q_yyA" frameborder="0" allowfullscreen></iframe>
         </div>
     </body>
 </html>
