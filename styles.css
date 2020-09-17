@@ -67,3 +67,11 @@ a:visited
         margin-left: 0px;
     }
 }
+
+@media screen and (max-device-width:900px) 
+{
+    .main 
+    {
+        margin-left: 0px;
+    }
+}
