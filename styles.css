@@ -33,6 +33,7 @@
 {
     float: left;
     padding-right: 40px;
+    max-width: 100%;
 }
 a:link 
 {
@@ -57,4 +58,12 @@ a:visited
     font-size:20px;
     font-weight: normal;
     margin-left: 50px;
+}
+
+@media screen and (max-width:750px) 
+{
+    .main 
+    {
+        margin-left: 0px;
+    }
 }
