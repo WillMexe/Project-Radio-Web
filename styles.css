@@ -60,6 +60,10 @@ a:visited
     margin-left: 50px;
 }
 
+span.date {
+    color:rgb(68, 68, 68);
+}
+
 @media screen and (max-width:900px) 
 {
     .main 
