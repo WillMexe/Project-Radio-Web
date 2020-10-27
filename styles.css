@@ -1,4 +1,18 @@
-body {
+#main 
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#headers 
+{
+    background-color: rgb(187, 234, 250);
+}
+
+#headertext
+{
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 50px;
@@ -27,6 +41,8 @@ body {
     margin-right: 13%;
     font-weight: bold;
     text-decoration: underline;
+    background-color: rgb(143, 208, 255);
+    border-radius: 10px;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -71,6 +87,7 @@ body {
 a:link 
 {
     color: rgb(68, 68, 68);
+    text-decoration: none;
 }
 a:visited
 {
@@ -95,7 +112,7 @@ a:visited
         text-align: center;
     }
 
-    .headers {
+    #headers {
         text-align: center;
         margin-left: 30px;
     }
