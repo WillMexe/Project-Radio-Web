@@ -3,6 +3,7 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 50px;
+    margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,7 +26,7 @@
     color: rgb(68, 68, 68);
     font-family:Arial;
     font-size:65px;
-    margin-right: 13%;
+    margin-right: 5%;
     font-weight: bold;
     text-decoration: none;
     -webkit-user-select: none; /* Safari */        
@@ -39,7 +40,7 @@
     color: rgb(68, 68, 68);
     font-family:Arial;
     font-size:65px;
-    margin-right: 13%;
+    margin-right: 5%;
     font-weight: bold;
     text-decoration: underline;
     background-color: rgb(143, 208, 255);
@@ -63,6 +64,11 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+#date 
+{
+    margin-top: -20px
 }
 
 .content
@@ -99,7 +105,7 @@ a:visited
 @media only screen and (max-width: 800px) {
     body {
         margin-left: 40px;
-        margin-right: 35px;
+        margin-right: 40px;
     }
 
     .subheader {
@@ -111,10 +117,22 @@ a:visited
         margin-left: 30px;
         max-width: 100%;
         text-align: center;
+        display: block;
+        margin-right: 100px;
+    }
+
+    .content {
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
     #headers {
-        text-align: center;
+        text-align: left;
         margin-left: 30px;
+    }
+
+    #date
+    {
+        text-align: center;
     }
 }
